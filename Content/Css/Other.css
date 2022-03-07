@@ -1,0 +1,64 @@
+.cdns-md-product-item button {
+    margin: 20px;
+    outline: none;
+}
+
+.md-carousel-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.cdns-md-crsl-shp-btn {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.cdns-md-crsl-shp-btn:hover {
+    background: rgba(60, 240, 36, 0.705);
+    color: rgb(29, 14, 1);
+    border-radius: 25px;
+}
+
+.cdns-md-crsl-shp-btn:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(247, 245, 245, 0.425);
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.cdns-md-crsl-shp-btn:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3), -4px -4px 6px 0 rgba(116, 125, 136, .2), inset -4px -4px 6px 0 rgba(255, 255, 255, .2), inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+@keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
