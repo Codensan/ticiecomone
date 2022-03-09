@@ -326,6 +326,72 @@ text-align: center;
   }
   
 
+  /* Product List Block */
+.ProductListBlock {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+margin-top: 3%;
+}
+
+.ProductListBlock .ProductCard {
+    position: relative;
+    float: left;
+    width: 25%;
+    /* text-align: center; */
+    /* min-height: 500px; */
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px;
+    box-shadow: 1px 1px 25px #d6afaf44;
+}
+
+.ProductListBlock .ProductCard img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+    transition: transform 1s;
+}
+
+.ProductListBlock .ProductCard img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.06);
+  border-radius: 25px; 
+}
+
+.ProductListBlock .ProductCard .ProductData{
+    float: left;
+    margin: 15px;
+}
+
+.ProductListBlock .ProductCard .ProductData .ProductCardHL{
+    font-size: 18px;
+    color: red;
+}
+
+.ProductListBlock .ProductCardPrice {
+    padding-top: 10px;
+}
+
+.ProductCardPrice span{
+    color:  green;
+    font-size: 20px;
+}
+
+.ProductData hr{
+    margin-top: 25px;
+}
+
+.ProductData .shopNowBtn {
+    margin-top: 15px;
+    box-shadow: 1px 1px 40px rgba(0, 255, 242, 0.39);
+}
+
 
 /* Desktop  */
 
