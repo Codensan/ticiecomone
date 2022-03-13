@@ -276,6 +276,108 @@ HTML CSS JS Result Skip Results Iframe body {
     margin-top: 15px;
     box-shadow: 1px 1px 40px rgba(0, 255, 242, 0.39);
 }
+
+
+/*Firt Featured Ads Block*/
+.cdnsExFtr{
+    float: left;
+    margin-left: 3%;
+    border-radius: 3px;
+}
+.FeaturedAds{
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+    
+}
+
+.FeaturedAds img{
+    float: left;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.FeaturedAds .FeaturedAdsText{
+    float: left;    
+    margin-top: 25px;
+    margin-left: 12px;
+    width: 40%;
+    background-color: #73baf583;
+    border-radius: 5px 25px 5px 25px;
+}
+
+.FeaturedAds .FeatuerdAdsHL {
+    float: left;
+    padding-top: 25px;
+    width: 100%;
+    padding-left: 30px;
+    font-size: 25px;
+    color: red;
+}
+
+.FeaturedAds .FeaturedAdsDesc {
+    float: left;
+    padding-left: 30px;
+
+}
+
+/* Two Column Ads */
+.TwoAdsBlock {
+    float: left;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    max-height: 550px;
+    
+}
+
+.TwoAdsBlock .AdsLeftBlcok{
+    float: left;
+    position: relative;
+    width: 45%;
+}
+
+
+.TwoAdsBlock .AdsRightBlock{
+    float: left;
+    position: relative;
+    margin-left: 10%;
+    width: 45%;
+}
+
+.TwoAdsBlock .AdsRightBlock img, .TwoAdsBlock .AdsLeftBlcok img {
+    float: left;
+    width: 100%;
+    max-height: 550px;
+    position: absolute;
+ opacity: 1;
+    z-index: -1;
+    border-radius: 25px; 
+    /* transition: transform 1s; opacity: 0; */  
+}
+
+.AdsOver-layer{
+    width: 100%;
+    min-height: 550px;
+    opacity: 0.5;
+    background: linear-gradient(-45deg, rgba(6, 190, 244, 0.75) 0%, rgba(45, 112, 253, 0.6) 25%);
+    transition: all 0.1s linear;
+    border-radius: 25px; 
+}
+
+.AdsOver-layer:hover{
+    opacity: 1.5;
+    border-radius: 25px; 
+}
+
+
 /* .owl-controls .owl-buttons {
     text-align: center;
     margin-top: 20px;
