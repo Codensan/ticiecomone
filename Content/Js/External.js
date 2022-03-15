@@ -39,6 +39,20 @@ $("#news-slider").owlCarousel({
 });
 
 
+$('.owl-carousel').owlCarousel({
+    items: 6,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [980, 2],
+    itemsMobile: [600, 1],
+    navigation: false,
+    navigationText: ["", ""],
+    pagination: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: true
+})
+
 
 
 

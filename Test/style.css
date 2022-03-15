@@ -136,9 +136,7 @@ HTML CSS JS Result Skip Results Iframe body {
     }
 }
 
-
 .cdnsCategory-xl {
-
     position: relative;
     float: left;
     width: 30%;
@@ -191,7 +189,6 @@ HTML CSS JS Result Skip Results Iframe body {
     color: white;
 }
 
-
 .cdnsOneParallax {
     position: absolute;
     width: 100%;
@@ -201,7 +198,6 @@ HTML CSS JS Result Skip Results Iframe body {
     /* Set a specific height */
     margin-top: 50%;
     height: 30%;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -212,24 +208,25 @@ HTML CSS JS Result Skip Results Iframe body {
 
 
 /* Product List Block */
+
 .ProductListBlock {
     position: relative;
     float: left;
     width: 100%;
     height: auto;
-
+    overflow: hidden;
+    background-color: #a8c8e2;
 }
 
 .ProductListBlock .ProductCard {
     position: relative;
     float: left;
-    width: 25%;
     /* text-align: center; */
     /* min-height: 500px; */
     /* border: 1px solid black; */
     border-radius: 25px;
-    border: 1px solid transparent;
-    padding: 10px;
+    border: 5px solid transparent;
+    padding: 30px;
     box-shadow: 1px 1px 25px #d6afaf44;
 }
 
@@ -240,21 +237,24 @@ HTML CSS JS Result Skip Results Iframe body {
     height: 100%;
     border-radius: 25px 25px 0px 0px;
     transition: transform 1s;
+    /* overflow: hidden; */
 }
 
-.ProductListBlock .ProductCard img:hover{
-    -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.06);
-  border-radius: 25px; 
+.ProductListBlock .ProductCard img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.06);
+    border-radius: 25px;
 }
 
-.ProductListBlock .ProductCard .ProductData{
+.ProductListBlock .ProductCard .ProductData {
     float: left;
     margin: 15px;
 }
 
-.ProductListBlock .ProductCard .ProductData .ProductCardHL{
+.ProductListBlock .ProductCard .ProductData .ProductCardHL {
     font-size: 18px;
     color: red;
 }
@@ -263,12 +263,12 @@ HTML CSS JS Result Skip Results Iframe body {
     padding-top: 10px;
 }
 
-.ProductCardPrice span{
-    color:  green;
+.ProductCardPrice span {
+    color: green;
     font-size: 20px;
 }
 
-.ProductData hr{
+.ProductData hr {
     margin-top: 25px;
 }
 
@@ -279,12 +279,14 @@ HTML CSS JS Result Skip Results Iframe body {
 
 
 /*Firt Featured Ads Block*/
-.cdnsExFtr{
+
+.cdnsExFtr {
     float: left;
     margin-left: 3%;
     border-radius: 3px;
 }
-.FeaturedAds{
+
+.FeaturedAds {
     position: relative;
     float: left;
     margin-left: 10%;
@@ -292,18 +294,17 @@ HTML CSS JS Result Skip Results Iframe body {
     width: 80%;
     height: auto;
     margin-top: 5%;
-    
 }
 
-.FeaturedAds img{
+.FeaturedAds img {
     float: left;
     position: absolute;
     width: 100%;
     z-index: -1;
 }
 
-.FeaturedAds .FeaturedAdsText{
-    float: left;    
+.FeaturedAds .FeaturedAdsText {
+    float: left;
     margin-top: 25px;
     margin-left: 12px;
     width: 40%;
@@ -323,10 +324,11 @@ HTML CSS JS Result Skip Results Iframe body {
 .FeaturedAds .FeaturedAdsDesc {
     float: left;
     padding-left: 30px;
-
 }
 
+
 /* Two Column Ads */
+
 .TwoAdsBlock {
     float: left;
     position: relative;
@@ -335,46 +337,123 @@ HTML CSS JS Result Skip Results Iframe body {
     margin-right: 10%;
     margin-top: 5%;
     max-height: 550px;
-    
 }
 
-.TwoAdsBlock .AdsLeftBlcok{
+.TwoAdsBlock .AdsLeftBlcok {
     float: left;
     position: relative;
     width: 45%;
 }
 
-
-.TwoAdsBlock .AdsRightBlock{
+.TwoAdsBlock .AdsRightBlock {
     float: left;
     position: relative;
     margin-left: 10%;
     width: 45%;
 }
 
-.TwoAdsBlock .AdsRightBlock img, .TwoAdsBlock .AdsLeftBlcok img {
+.TwoAdsBlock .AdsRightBlock img,
+.TwoAdsBlock .AdsLeftBlcok img {
     float: left;
     width: 100%;
     max-height: 550px;
     position: absolute;
- opacity: 1;
+    opacity: 1;
     z-index: -1;
-    border-radius: 25px; 
-    /* transition: transform 1s; opacity: 0; */  
+    border-radius: 25px;
+    /* transition: transform 1s; opacity: 0; */
 }
 
-.AdsOver-layer{
+.AdsOver-layer {
     width: 100%;
     min-height: 550px;
     opacity: 0.5;
     background: linear-gradient(-45deg, rgba(6, 190, 244, 0.75) 0%, rgba(45, 112, 253, 0.6) 25%);
     transition: all 0.1s linear;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
 
-.AdsOver-layer:hover{
+.AdsOver-layer:hover {
     opacity: 1.5;
-    border-radius: 25px; 
+    border-radius: 25px;
+}
+
+.FooterSection {
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+.FooterLogo {
+    float: left;
+    position: relative;
+    width: 30%;
+}
+
+.FooterLogo img {
+    float: left;
+    position: relative;
+    margin: 25px;
+    width: 300px;
+    max-height: 150px;
+}
+
+.FooterNavbar {
+    float: left;
+    position: relative;
+    width: 60%;
+    margin: 25px;
+    /* background-color: rebeccapurple; */
+    margin-top: 5%;
+}
+
+.FooterNavbar ul {
+    float: left;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    left: 10%;
+    right: inherit;
+}
+
+.FooterNavbar ul li {
+    float: left;
+    width: 10%;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.FooterNavbar ul li a {
+    float: left;
+    width: 10%;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.FooterNavbar ul li a:hover {
+    font-size: 20px;
+}
+
+.CodensanCopyRight {
+    float: left;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    padding: 15px 15px;
+    font-weight: bold;
+}
+
+.CodensanCopyRight span {
+    color: rgba(48, 48, 214, 0.712);
+    font-size: 20px;
 }
 
 

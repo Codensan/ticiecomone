@@ -245,13 +245,12 @@ body {
 
 /* First -3- Category Section */
 
-.cdnsTp20{
+.cdnsTp20 {
     position: relative;
     top: 25%;
 }
 
 .cdnsCategory-xl {
-    
     position: relative;
     float: left;
     width: 30%;
@@ -259,9 +258,9 @@ body {
     align-items: center;
     box-shadow: 0px 10px 20px -10px #1376c5;
     border-radius: 25px;
-  }
+}
 
-.cdnsCategory-xlImg{
+.cdnsCategory-xlImg {
     position: relative;
     float: left;
     width: 100%;
@@ -275,64 +274,73 @@ body {
     height: auto;
     font-size: 16px;
     font-weight: bold;
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 
 /* ShopNowBtn Default */
 
 .shopNowBtn {
-padding: 7px 20px;
-width: 50%;
-margin-left: 25%;
-margin-right: 25%;
-margin-bottom: 5%;
-font-size: 16px;
-background: #2196F3;
-color: #ffffff;
-box-shadow: 0px 10px 20px -10px #1376c5;
-border-radius: 25px;
-text-transform: uppercase;
-text-decoration: none;
-display: inline-block;
-text-align: center;
+    padding: 7px 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    font-size: 16px;
+    background: #2196F3;
+    color: #ffffff;
+    box-shadow: 0px 10px 20px -10px #1376c5;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
-.shopNowBtn:hover{
+.shopNowBtn:hover {
     font-size: 17px;
     font-weight: bold;
     color: white;
 }
 
 
-
 /* First - 1 - parallax img ads  */
+
 .cdnsOneParallax {
     position: absolute;
     width: 100%;
     /* The image used */
     background-image: url("https://www.dunyaatlasi.com/wp-content/uploads/2018/09/resim-tablo-nasil-okunur.jpg");
-  /* margin-top: 5%; */
+    /* margin-top: 5%; */
     /* Set a specific height */
     margin-top: 65%;
-    height: 20%; 
-  
+    height: 20%;
     /* Create the parallax scrolling effect */
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -6;
-  }
-  
+}
 
-  /* Product List Block */
+
+/* Product List Block */
+
 .ProductListBlock {
     position: relative;
     float: left;
     width: 100%;
     height: auto;
-margin-top: 3%;
+    margin-top: 3%;
+}
+
+.ProductListBlockSlider {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding: 15px;
 }
 
 .ProductListBlock .ProductCard {
@@ -348,6 +356,61 @@ margin-top: 3%;
     box-shadow: 1px 1px 25px #d6afaf44;
 }
 
+
+/* This Component Slider Version Started */
+
+.ProductListBlockSlider {
+    float: left;
+    margin-left: 0%;
+}
+
+.ProductListBlockSlider .ProductCard {
+    position: relative;
+    float: left;
+    /* text-align: center; */
+    /* min-height: 500px; */
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px;
+    box-shadow: 1px 1px 25px #d6afaf44;
+}
+
+.ProductListBlockSlider .ProductCard img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+    transition: transform 1s;
+}
+
+.ProductListBlockSlider .ProductCard img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.06);
+    border-radius: 25px;
+}
+
+.ProductListBlockSlider .ProductCard .ProductData {
+    float: left;
+    margin: 15px;
+}
+
+.ProductListBlockSlider .ProductCard .ProductData .ProductCardHL {
+    font-size: 18px;
+    color: red;
+}
+
+.ProductListBlockSlider .ProductCardPrice {
+    padding-top: 10px;
+}
+
+
+/* Slider Ended */
+
 .ProductListBlock .ProductCard img {
     position: relative;
     float: left;
@@ -357,19 +420,21 @@ margin-top: 3%;
     transition: transform 1s;
 }
 
-.ProductListBlock .ProductCard img:hover{
-    -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.06);
-  border-radius: 25px; 
+.ProductListBlock .ProductCard img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.06);
+    border-radius: 25px;
 }
 
-.ProductListBlock .ProductCard .ProductData{
+.ProductListBlock .ProductCard .ProductData {
     float: left;
     margin: 15px;
 }
 
-.ProductListBlock .ProductCard .ProductData .ProductCardHL{
+.ProductListBlock .ProductCard .ProductData .ProductCardHL {
     font-size: 18px;
     color: red;
 }
@@ -378,12 +443,12 @@ margin-top: 3%;
     padding-top: 10px;
 }
 
-.ProductCardPrice span{
-    color:  green;
+.ProductCardPrice span {
+    color: green;
     font-size: 20px;
 }
 
-.ProductData hr{
+.ProductData hr {
     margin-top: 25px;
 }
 
@@ -394,12 +459,14 @@ margin-top: 3%;
 
 
 /*Firt Featured Ads Block*/
-.cdnsExFtr{
+
+.cdnsExFtr {
     float: left;
     margin-left: 3%;
     border-radius: 3px;
 }
-.FeaturedAds{
+
+.FeaturedAds {
     position: relative;
     float: left;
     margin-left: 10%;
@@ -407,18 +474,17 @@ margin-top: 3%;
     width: 80%;
     height: auto;
     margin-top: 5%;
-    
 }
 
-.FeaturedAds img{
+.FeaturedAds img {
     float: left;
     position: absolute;
     width: 100%;
     z-index: -1;
 }
 
-.FeaturedAds .FeaturedAdsText{
-    float: left;    
+.FeaturedAds .FeaturedAdsText {
+    float: left;
     margin-top: 25px;
     margin-left: 12px;
     width: 40%;
@@ -438,11 +504,11 @@ margin-top: 3%;
 .FeaturedAds .FeaturedAdsDesc {
     float: left;
     padding-left: 30px;
-
 }
 
 
 /* Two Column Ads */
+
 .TwoAdsBlock {
     float: left;
     position: relative;
@@ -451,46 +517,124 @@ margin-top: 3%;
     margin-right: 10%;
     margin-top: 15%;
     max-height: 550px;
-    
 }
 
-.TwoAdsBlock .AdsLeftBlcok{
+.TwoAdsBlock .AdsLeftBlcok {
     float: left;
     position: relative;
     width: 45%;
 }
 
-
-.TwoAdsBlock .AdsRightBlock{
+.TwoAdsBlock .AdsRightBlock {
     float: left;
     position: relative;
     margin-left: 10%;
     width: 45%;
 }
 
-.TwoAdsBlock .AdsRightBlock img, .TwoAdsBlock .AdsLeftBlcok img {
+.TwoAdsBlock .AdsRightBlock img,
+.TwoAdsBlock .AdsLeftBlcok img {
     float: left;
     width: 100%;
     max-height: 550px;
     position: absolute;
- opacity: 1;
+    opacity: 1;
     z-index: -1;
-    border-radius: 25px; 
-    /* transition: transform 1s; opacity: 0; */  
+    border-radius: 25px;
+    /* transition: transform 1s; opacity: 0; */
 }
 
-.AdsOver-layer{
+.AdsOver-layer {
     width: 100%;
     min-height: 550px;
     opacity: 0.5;
     background: linear-gradient(-45deg, rgba(6, 190, 244, 0.75) 0%, rgba(45, 112, 253, 0.6) 25%);
     transition: all 0.1s linear;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
 
-.AdsOver-layer:hover{
+.AdsOver-layer:hover {
     opacity: 1.5;
-    border-radius: 25px; 
+    border-radius: 25px;
+}
+
+.FooterSection {
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    margin-top: 5%;
+}
+
+.FooterLogo {
+    float: left;
+    position: relative;
+    width: 30%;
+}
+
+.FooterLogo img {
+    float: left;
+    position: relative;
+    margin: 25px;
+    width: 300px;
+    max-height: 150px;
+}
+
+.FooterNavbar {
+    float: left;
+    position: relative;
+    width: 60%;
+    margin: 25px;
+    /* background-color: rebeccapurple; */
+    margin-top: 5%;
+}
+
+.FooterNavbar ul {
+    float: left;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    left: 10%;
+    right: inherit;
+}
+
+.FooterNavbar ul li {
+    float: left;
+    width: 10%;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.FooterNavbar ul li a {
+    float: left;
+    width: 10%;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.FooterNavbar ul li a:hover {
+    font-size: 20px;
+}
+
+.CodensanCopyRight {
+    float: left;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    padding: 15px 15px;
+    font-weight: bold;
+}
+
+.CodensanCopyRight span {
+    color: rgba(48, 48, 214, 0.712);
+    font-size: 20px;
 }
 
 
