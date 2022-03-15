@@ -6,6 +6,148 @@ body {
 }
 
 
+/* Other Object */
+
+
+/*Button Type One*/
+
+.BtnType1 {
+    float: left;
+    border-radius: 4px;
+    background-color: #d35400;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    border-radius: 25px;
+    margin: 1%;
+}
+
+.BtnType1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.BtnType1 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.BtnType1:hover span {
+    padding-right: 25px;
+}
+
+.BtnType1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* BtnType2 */
+
+.BtnType2 {
+    display: inline-block;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.BtnType2:focus {
+    outline: none;
+}
+
+.BtnType2:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 0 #FBC638;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(174, 204, 129);
+}
+
+.BtnType2 span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.BtnType2:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 15px;
+}
+
+span {
+    transform: skewX(15deg)
+}
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.BtnType2:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.BtnType2:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.BtnType2:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+
+/* Other Object */
+
+
 /* Desktop */
 
 .cdns-fixed {
@@ -635,6 +777,96 @@ body {
 .CodensanCopyRight span {
     color: rgba(48, 48, 214, 0.712);
     font-size: 20px;
+}
+
+
+/* Bran Story Telling */
+
+.BrandStoryTelling {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.BrandStoryTelling .Content {
+    float: left;
+    margin-left: 10%;
+    width: 60%;
+    /* background-color: #2196F3; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.BrandStoryTelling .CodensanCopyRight .BstHl {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.BrandStoryTelling .Image {
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+}
+
+.BrandStoryTelling .Image img {
+    width: 300px;
+    height: 250px;
+}
+
+
+/* Info Iconic Bars */
+
+.InfoIconBar {
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    position: relative;
+}
+
+.InfoIconBar ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.InfoIconBar ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.Inf-Icon {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.Inf-Icon img {
+    display: block;
+    border: none;
+    max-width: 100%;
+}
+
+.Inf-Text {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #999;
+    opacity: 1;
+}
+
+.InfoIconBar ul li:not(:last-child):after {
+    content: '';
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ccc;
 }
 
 
