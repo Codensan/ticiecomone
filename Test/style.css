@@ -2,6 +2,13 @@ HTML CSS JS Result Skip Results Iframe body {
     background-color: #f1f6ff;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 1000vh;
+}
+
 .cdns-adsProductList {
     float: left;
     position: relative;
@@ -712,3 +719,144 @@ path.two {
 .owl-controls .owl-buttons .owl-next:after {
     content: "\f105";
 } */
+
+
+/* About Us */
+
+
+/* Box Services */
+
+.fa-shopping-basket:before {
+    content: "\f291";
+}
+
+.services-items {
+    float: left;
+    position: relative;
+    /* background-color: red; */
+}
+
+.icon-services {
+    float: left;
+    padding: 20px;
+}
+
+.icon-services a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    margin: 0 7px 0 0;
+    display: inline-block;
+    position: relative;
+}
+
+.icon-services i {
+    color: #43833e;
+    position: absolute;
+    padding: 17px;
+    transition: all .5s ease-out 0s;
+    -webkit-transition: all .5s ease-out 0s;
+}
+
+.info-services {
+    float: left;
+    position: relative;
+    /* background-color: #1376c5; */
+    padding: 20px;
+}
+
+.info-services h3 {
+    font-weight: 700;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+}
+
+
+/* Steps */
+
+.cdns-steps-list {
+    background-image: url(https://cdn.shopify.com/s/files/1/0108/3408/3902/files/Parallac.jpg?v=1585651841);
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* border: 10px solid black; */
+    /* background-color: red; */
+    position: relative;
+    height: 550px;
+    background-repeat: no-repeat;
+}
+
+.cdns-steps-list::after {
+    background: #000000;
+}
+
+.cdns-steps-list::after {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.steps-desc,
+.steps-item-list {
+    float: left;
+    position: relative;
+    color: white;
+    z-index: 2;
+    /* background-color: red; */
+}
+
+.steps-desc .cdns-read-more {
+    color: #ffffff;
+    background: #2963ff;
+    font-weight: bold;
+    border-radius: 30px;
+    line-height: normal;
+    text-align: center;
+    padding: 13px 35px 13px 30px;
+}
+
+.cdns-read-more::after {
+    content: '\f101';
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.steps-desc .cdns-read-more:hover {
+    color: white;
+    background: white;
+    color: #2963ff;
+}
+
+.steps-item-list {
+    padding-top: 12px;
+}
+
+.steps-desc-inf {
+    padding: 80px;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+.steps-desc-inf h3,
+.steps-item h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.steps-item {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.steps-item h3 i {
+    padding-right: 10px;
+}
