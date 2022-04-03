@@ -1127,6 +1127,152 @@ textarea {
 }
 
 
+/* Footer Block */
+
+.FooterBlock {
+    background-color: #121921;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    padding: 25px;
+}
+
+.BrandColumn,
+.FooterMenu,
+.FooterContact {
+    float: left;
+    position: relative;
+    /* padding: 5%; */
+}
+
+.BrandColumn .footerbrandDesc {
+    padding-top: 15px;
+}
+
+.BrandColumn .footerbrandDesc .socialIcons {
+    float: left;
+    /* background-color: red; */
+}
+
+.socialIcons ul {
+    float: left;
+    width: 75%;
+    /* background-color: red; */
+    padding-top: 25px;
+}
+
+.socialIcons ul li {
+    float: left;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.FooterMenu p,
+.FooterContact p {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.FooterMenu ul {
+    float: left;
+}
+
+.FooterMenu ul li {
+    float: left;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.FooterMenu ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.FooterContact ul li {
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    list-style-type: none;
+}
+
+.FooterContact ul li i {
+    float: left;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.FooterContact li span {
+    float: left;
+    padding-top: -5px;
+}
+
+.FooterContact .newsletter {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+
+.FooterContact .newsletter p {
+    float: left;
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    width: 38%;
+    /* background-color: red; */
+    padding-right: 15px;
+}
+
+.FooterContact .newsletter .nw-email {
+    float: left;
+    width: 60%;
+    background-color: rgba(202, 193, 193, 0.952);
+}
+
+.FooterContact .newsletter .nw-send {
+    float: left;
+    margin-left: 38%;
+    width: 60%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footerTerms {
+    float: left;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footerTerms ul {
+    float: left;
+    list-style-type: none;
+    width: 100%;
+}
+
+.footerTerms ul li {
+    margin-left: 25%;
+    position: relative;
+    float: left;
+}
+
+.footerTerms ul li a {
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+
 /* Desktop  */
 
 
